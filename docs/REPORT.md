@@ -566,3 +566,26 @@ This is an individual project. Kalybekov Sultan is responsible for the whole pro
 - Raw data: `results/raw/<exp>/<profile>/rep<i>/` (requests.csv, summary.json, integrity.json, alerts.json, counters.json, plan.json, logs/). Consolidated: `results/summary.csv`, `results/summary.md`, `results/reliability.json`, `results/charts/`.
 - Reproduction: README, "Reproducing the experiments".
 - Code repository: https://github.com/borzki/unidep
+
+## Appendix B: repository map (configuration, scripts, logs)
+
+| What | Where in the repository |
+|---|---|
+| Service code | `services/` (gateway, auth, course, enrollment, notification), shared library in `common/` |
+| Baseline/improved configuration | `common/config.py` (one flag per mechanism), `deploy/docker/baseline.env` and `improved.env` |
+| Deployment | `Dockerfile`, `docker-compose.yml`, `deploy/local/supervisor.py` |
+| Database schema and seeding | `db/init.sql`, `db/reset.py` |
+| Monitoring configuration | `deploy/prometheus/alerts.yml` (7 rules), `deploy/prometheus/prometheus-*.yml`, `deploy/grafana/` (dashboard) |
+| Automated tests | `tests/test_mechanisms.py` (14 unit tests), `tests/test_acceptance.py` (AC1-AC9) |
+| Fault-injection and experiment scripts | `experiments/run.py` (E1-E6), `security_tests.py` (E7), `backup_restore.py` (E8), `soak.py` (R), `resources.py`, `analyze.py`, `export_telemetry.py` |
+| Raw data and logs per run | `results/raw/<exp>/<profile>/rep<i>/`: `plan.json`, `requests.csv`, `summary.json`, `integrity.json`, `alerts.json`, `counters.json`, `logs/*.log` (JSON lines), `logs/supervisor_events.jsonl` |
+| Consolidated tables and charts | `results/summary.csv`, `results/summary.md`, `results/reliability.json`, `results/resources.json`, `results/charts/` |
+| Monitoring evidence | `results/telemetry/` (exported Prometheus series for E6), `alerts.json` in every run |
+| Security evidence | `results/raw/E7/<profile>/cases.json`, `audit_log.json`, service logs with `security_event` lines |
+| Regression after code review | `results/regression_after_review/` |
+
+Sample log line (enrollment-service, E6 baseline):
+
+```
+{"ts": "2026-11-08T17:45:12.567Z", "level": "ERROR", "service": "enrollment", "instance": "0", "request_id": "c5ce9793049f4267", "msg": "notification_failed", "enrollment_id": "8e8c48bf-...", "error": "UpstreamError"}
+```
