@@ -1,0 +1,29 @@
+{
+  "mode": "baseline",
+  "rep": 1,
+  "confirmed_before_incident": 286,
+  "confirmed_after_incident": 0,
+  "backup_t": 1794160781.553499,
+  "confirmed_at_backup": 148,
+  "rpo_records_lost": 286,
+  "integrity_after_incident": {
+    "enrollments_total": 0,
+    "confirmed": 0,
+    "pending_left": 0,
+    "failed": 0,
+    "duplicate_active_enrollments": 0,
+    "reservations_total": 0,
+    "duplicate_reservations": 0,
+    "seat_counter_mismatch": 0,
+    "leaked_seats": 0,
+    "confirmed_without_seat": 0,
+    "confirmed_without_notification": 0,
+    "duplicate_notifications": 0,
+    "acked_but_not_confirmed": 0,
+    "integrity_ok": true
+  },
+  "rto_s": null,
+  "rto_note": "no backup: data not recoverable",
+  "probe_requests": 20,
+  "probe_success": 20
+}

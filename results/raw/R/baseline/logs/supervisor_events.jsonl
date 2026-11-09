@@ -1,0 +1,28 @@
+{"ts": 1794161051.328642, "event": "started", "mode": "baseline", "restart": true}
+{"ts": 1794161082.3066728, "event": "killed", "service": "course", "instance": 0, "pid": 9173}
+{"ts": 1794161082.484177, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161083.4853451, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794161102.300181, "event": "killed", "service": "course", "instance": 0, "pid": 9238}
+{"ts": 1794161102.392335, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161103.3933568, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794161105.2987144, "event": "killed", "service": "course", "instance": 0, "pid": 9272}
+{"ts": 1794161105.4032905, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161106.4044058, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794161123.5973506, "event": "killed", "service": "course", "instance": 0, "pid": 9283}
+{"ts": 1794161123.6855056, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161124.6866326, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794161219.701108, "event": "killed", "service": "course", "instance": 0, "pid": 9316}
+{"ts": 1794161219.7197397, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161220.7211769, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794161221.3147242, "event": "killed", "service": "enrollment", "instance": 0, "pid": 9178}
+{"ts": 1794161221.327747, "event": "exited", "service": "enrollment", "instance": 0, "code": -9}
+{"ts": 1794161222.328995, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794161242.9108605, "event": "killed", "service": "course", "instance": 0, "pid": 9472}
+{"ts": 1794161243.0286267, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161244.0298147, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794161246.7107515, "event": "killed", "service": "enrollment", "instance": 0, "pid": 9478}
+{"ts": 1794161246.8419957, "event": "exited", "service": "enrollment", "instance": 0, "code": -9}
+{"ts": 1794161247.8431416, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794161249.2160437, "event": "killed", "service": "course", "instance": 0, "pid": 9532}
+{"ts": 1794161249.2496474, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794161250.2509794, "event": "restarted", "service": "course", "instance": 0}

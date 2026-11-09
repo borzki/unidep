@@ -1,0 +1,68 @@
+[
+  {
+    "ts": "2026-11-08 17:59:11.335433+00:00",
+    "username": "student0001",
+    "event": "login_ok",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:11.387825+00:00",
+    "username": "student0002",
+    "event": "login_ok",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:11.439147+00:00",
+    "username": "admin",
+    "event": "login_ok",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:11.959443+00:00",
+    "username": "student0003",
+    "event": "login_failed",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.007304+00:00",
+    "username": "student0003",
+    "event": "login_failed",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.054808+00:00",
+    "username": "student0003",
+    "event": "login_failed",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.108283+00:00",
+    "username": "student0003",
+    "event": "login_failed",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.158883+00:00",
+    "username": "student0003",
+    "event": "login_failed",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.181996+00:00",
+    "username": "student0003",
+    "event": "login_locked",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.202130+00:00",
+    "username": "student0003",
+    "event": "login_locked",
+    "client": "127.0.0.1"
+  },
+  {
+    "ts": "2026-11-08 17:59:12.224094+00:00",
+    "username": "student0003",
+    "event": "login_locked",
+    "client": "127.0.0.1"
+  }
+]

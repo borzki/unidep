@@ -1,0 +1,23 @@
+{
+  "retries": 0.0,
+  "circuit_opens": 0.0,
+  "gateway_failovers": 0.0,
+  "recovery_actions": {
+    "pending_completed": 0.0,
+    "outbox_sent": 0.0
+  },
+  "security_events": {
+    "missing_token": 1.2,
+    "expired_token": 1.2,
+    "invalid_token": 2.4,
+    "forbidden_role": 1.2,
+    "internal_endpoint_denied": 1.2,
+    "login_failed": 5.8,
+    "login_locked": 3.5,
+    "oversized_payload": 1.1,
+    "idor_denied": 2.0,
+    "internal_via_gateway": 1.1,
+    "rate_limited": 0.0
+  },
+  "rate_limited": 0.0
+}

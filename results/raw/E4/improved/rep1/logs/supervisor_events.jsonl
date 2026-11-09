@@ -1,0 +1,7 @@
+{"ts": 1794159585.6186078, "event": "started", "mode": "improved", "restart": true}
+{"ts": 1794159599.0757155, "event": "exited", "service": "enrollment", "instance": 0, "code": 137}
+{"ts": 1794159600.0770924, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794159609.118989, "event": "exited", "service": "enrollment", "instance": 0, "code": 137}
+{"ts": 1794159610.120122, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794159618.9607599, "event": "exited", "service": "enrollment", "instance": 0, "code": 137}
+{"ts": 1794159619.9624336, "event": "restarted", "service": "enrollment", "instance": 0}

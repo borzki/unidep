@@ -1,0 +1,58 @@
+{
+  "all": {
+    "n": 801,
+    "success": 801,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 7.3,
+    "p95_ms": 17.1,
+    "p99_ms": 43.9,
+    "max_ms": 124.7,
+    "status_counts": {
+      "200": 563,
+      "201": 238
+    }
+  },
+  "enroll": {
+    "n": 238,
+    "success": 238,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 14.6,
+    "p95_ms": 23.2,
+    "p99_ms": 115.2,
+    "max_ms": 124.7,
+    "status_counts": {
+      "201": 238
+    }
+  },
+  "read": {
+    "n": 563,
+    "success": 563,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 6.9,
+    "p95_ms": 8.8,
+    "p99_ms": 9.4,
+    "max_ms": 18.5,
+    "status_counts": {
+      "200": 563
+    }
+  },
+  "during_fault": {
+    "n": 601,
+    "success": 601,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 7.4,
+    "p95_ms": 17.6,
+    "p99_ms": 50.9,
+    "max_ms": 124.7,
+    "status_counts": {
+      "200": 414,
+      "201": 187
+    }
+  },
+  "recovery_s": 0.0,
+  "client_retries_used": 0
+}

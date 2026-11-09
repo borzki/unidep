@@ -1,0 +1,13 @@
+{
+  "title": "Application/service instance failure",
+  "hypothesis": "With 2 replicas, gateway health-check ejection/failover and restart policy, the enrollment workflow stays >=99% successful when one enrollment and one course instance are SIGKILLed; the single-instance baseline loses the workflow until manual intervention.",
+  "workload": "Workload(rps=20, duration=40, read_ratio=0.7, client_retries=0, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[])",
+  "fault_start": 10,
+  "fault_end": 40,
+  "events": 2,
+  "fault": "SIGKILL enrollment:0 and course:0 at t=10 s",
+  "success": "HTTP 2xx",
+  "mode": "improved",
+  "rep": 2,
+  "t_start_unix": 1794158215.2923396
+}

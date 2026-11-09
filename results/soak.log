@@ -1,0 +1,4 @@
+== R soak baseline
+   baseline: faults=9 repairs=[1.73, 1.63, 1.69, 1.59, 1.65, 1.75, 1.73, 1.75, 1.63] integrity=True
+== R soak improved
+   improved: faults=9 repairs=[1.75, 1.66, 1.66, 1.76, 1.49, 1.67, 1.72, 1.67, 1.72] integrity=True

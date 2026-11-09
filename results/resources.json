@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "processes": 5,
+    "rss_mb_idle": 329.0,
+    "rss_mb_after_load": 333.3,
+    "cpu_s_during_30s_load": 5
+  },
+  "improved": {
+    "processes": 7,
+    "rss_mb_idle": 464.7,
+    "rss_mb_after_load": 471.6,
+    "cpu_s_during_30s_load": 6
+  }
+}

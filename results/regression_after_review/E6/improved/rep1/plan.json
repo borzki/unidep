@@ -1,0 +1,13 @@
+{
+  "title": "Monitoring and alert trigger (notification-service failing)",
+  "hypothesis": "A failing notification dependency is detected by an alert within 10 s and the failing request can be traced across services by request id; improved degrades gracefully (outbox) so users still enroll.",
+  "workload": "Workload(rps=20, duration=45, read_ratio=0.7, client_retries=0, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[])",
+  "fault_start": 10,
+  "fault_end": 30,
+  "events": 2,
+  "fault": "100% 503 from notification-service /internal/* t=10..30 s",
+  "success": "HTTP 2xx",
+  "mode": "improved",
+  "rep": 1,
+  "t_start_unix": 1794195324.1579998
+}

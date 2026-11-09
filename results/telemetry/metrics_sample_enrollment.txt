@@ -1,0 +1,12 @@
+downstream_calls_total{outcome="ok",service="enrollment",target="course"} 1.0
+downstream_calls_total{outcome="ok",service="enrollment",target="notification"} 2.0
+downstream_calls_created{outcome="ok",service="enrollment",target="course"} 1.7941620357221034e+09
+downstream_calls_created{outcome="ok",service="enrollment",target="notification"} 1.7941620357905915e+09
+downstream_retries_total{service="enrollment",target="course"} 0.0
+downstream_retries_total{service="enrollment",target="notification"} 0.0
+downstream_retries_created{service="enrollment",target="course"} 1.794162028653809e+09
+downstream_retries_created{service="enrollment",target="notification"} 1.7941620286538198e+09
+circuit_breaker_state{service="enrollment",target="course"} 0.0
+circuit_breaker_state{service="enrollment",target="notification"} 0.0
+circuit_breaker_open_total{service="enrollment",target="course"} 0.0
+circuit_breaker_open_total{service="enrollment",target="notification"} 0.0

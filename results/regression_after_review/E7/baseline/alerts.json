@@ -1,0 +1,10 @@
+[
+  {
+    "alert": "SecurityDenialSpike",
+    "labels": {
+      "severity": "warning"
+    },
+    "first_firing_s": 4.0,
+    "last_firing_s": 7.0
+  }
+]

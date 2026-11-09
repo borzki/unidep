@@ -1,0 +1,53 @@
+{
+  "baseline": {
+    "observation_window_s": 300.0,
+    "offered_rps": 10,
+    "requests": 3001,
+    "injected_component_faults": 9,
+    "component_failure_rate_per_h": 108.0,
+    "component_mttr_s_mean": 1.68,
+    "component_mttr_s_sd": 0.06,
+    "service_failure_episodes": 6,
+    "episode_durations_s": [
+      3.0,
+      6.0,
+      2.0,
+      4.0,
+      2.0,
+      5.0
+    ],
+    "downtime_s": 22.0,
+    "uptime_s": 278.0,
+    "service_mttr_s": 3.67,
+    "service_mttf_s": 46.3,
+    "service_mtbf_s": 50.0,
+    "service_failure_rate_per_h": 72.0,
+    "availability_time_based": 0.92667,
+    "availability_from_mttf_mttr": 0.92667,
+    "request_success_ratio": 0.96135,
+    "request_failures": 116,
+    "integrity_ok": true
+  },
+  "improved": {
+    "observation_window_s": 300.0,
+    "offered_rps": 10,
+    "requests": 3001,
+    "injected_component_faults": 9,
+    "component_failure_rate_per_h": 108.0,
+    "component_mttr_s_mean": 1.68,
+    "component_mttr_s_sd": 0.08,
+    "service_failure_episodes": 0,
+    "episode_durations_s": [],
+    "downtime_s": 0.0,
+    "uptime_s": 300.0,
+    "service_mttr_s": 0.0,
+    "service_mttf_s": null,
+    "service_mtbf_s": null,
+    "service_failure_rate_per_h": 0.0,
+    "availability_time_based": 1.0,
+    "availability_from_mttf_mttr": 1.0,
+    "request_success_ratio": 1.0,
+    "request_failures": 0,
+    "integrity_ok": true
+  }
+}

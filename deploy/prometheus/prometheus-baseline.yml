@@ -1,0 +1,9 @@
+# Prometheus config for docker-compose (baseline profile)
+global:
+  scrape_interval: 2s
+  evaluation_interval: 2s
+rule_files: [alerts.yml]
+scrape_configs:
+  - job_name: unidep
+    static_configs:
+      - targets: ["auth-1:8000","course-1:8000","enrollment-1:8000","notification-1:8000","gateway:8000"]

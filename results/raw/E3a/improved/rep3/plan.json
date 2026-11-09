@@ -1,0 +1,13 @@
+{
+  "title": "Network delay on course-service (3 s added latency)",
+  "hypothesis": "Tight timeouts + bounded retries + circuit breaker keep enrollment latency bounded (p99 < 5 s) while the dependency is slow; baseline latency follows the injected delay.",
+  "workload": "Workload(rps=20, duration=40, read_ratio=0.7, client_retries=0, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[])",
+  "fault_start": 10,
+  "fault_end": 25,
+  "events": 2,
+  "fault": "+3000 ms on course-service /internal/* from t=10 to t=25 s",
+  "success": "HTTP 2xx",
+  "mode": "improved",
+  "rep": 3,
+  "t_start_unix": 1794159089.1751802
+}

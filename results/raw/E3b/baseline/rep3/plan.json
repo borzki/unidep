@@ -1,0 +1,13 @@
+{
+  "title": "Transient dependency errors (30% of course-service calls return 503)",
+  "hypothesis": "Bounded retries with backoff mask transient 30% failures (enroll success >= 97%); baseline success drops to ~70% for enrollment.",
+  "workload": "Workload(rps=20, duration=40, read_ratio=0.7, client_retries=0, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[])",
+  "fault_start": 10,
+  "fault_end": 30,
+  "events": 2,
+  "fault": "30% injected 503 on course-service /internal/* from t=10 to t=30 s",
+  "success": "HTTP 2xx",
+  "mode": "baseline",
+  "rep": 3,
+  "t_start_unix": 1794159402.4190388
+}

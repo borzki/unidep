@@ -1,0 +1,19 @@
+sequenceDiagram
+  participant C as Client
+  participant G as Gateway
+  participant E as enrollment-svc
+  participant D as PostgreSQL
+  participant S as course-svc
+  participant N as notification-svc
+  C->>G: POST /enrollments (JWT, Idempotency-Key)
+  G->>E: forward (replica chosen round-robin)
+  E->>D: lookup key, INSERT PENDING/CREATED  [checkpoint 1]
+  E->>S: reserve seat (enrollment_id) timeout 1s, ≤3 retries, breaker
+  S->>D: UPDATE seats_taken<capacity, INSERT reservation (unique enrollment_id)
+  S-->>E: 200 reserved (or replayed)
+  Note over E: crash point "after_reserve" (E4)
+  E->>D: UPDATE CONFIRMED/RESERVED + INSERT outbox (one txn) [checkpoint 2]
+  E-->>G: 201 CONFIRMED
+  G-->>C: 201
+  E->>N: outbox dispatcher (async, retried, deduplicated)
+  Note over E,D: recovery loop: PENDING older than 5 s → resume from checkpoint

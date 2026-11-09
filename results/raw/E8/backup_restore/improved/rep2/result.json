@@ -1,0 +1,33 @@
+{
+  "mode": "improved",
+  "rep": 2,
+  "confirmed_before_incident": 304,
+  "confirmed_after_incident": 0,
+  "backup_t": 1794160912.3400974,
+  "backup_duration_s": 0.082,
+  "confirmed_at_backup": 148,
+  "restore_duration_s": 0.059,
+  "confirmed_after_restore": 146,
+  "rpo_records_lost": 158,
+  "rpo_seconds": 18.0,
+  "integrity_after_restore": {
+    "enrollments_total": 147,
+    "confirmed": 147,
+    "pending_left": 0,
+    "failed": 0,
+    "duplicate_active_enrollments": 0,
+    "reservations_total": 147,
+    "duplicate_reservations": 0,
+    "seat_counter_mismatch": 0,
+    "leaked_seats": 0,
+    "confirmed_without_seat": 0,
+    "confirmed_without_notification": 0,
+    "duplicate_notifications": 0,
+    "acked_but_not_confirmed": 0,
+    "integrity_ok": true
+  },
+  "rto_s": 8.1,
+  "rto_note": "fault -> restore complete -> integrity verified (includes 8 s settle wait)",
+  "probe_requests": 20,
+  "probe_success": 18
+}

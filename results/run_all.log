@@ -1,0 +1,80 @@
+== E1 baseline rep1: Application/service instance failure
+   success=0.2509 enroll=0.2143 p95=22.2 p99=26.0 rec=None integrity_now=True after=True
+== E1 improved rep1: Application/service instance failure
+   success=1.0 enroll=1.0 p95=22.2 p99=34.7 rec=0.0 integrity_now=True after=True
+== E1 baseline rep2: Application/service instance failure
+   success=0.2509 enroll=0.2245 p95=23.6 p99=27.2 rec=None integrity_now=True after=True
+== E1 improved rep2: Application/service instance failure
+   success=1.0 enroll=1.0 p95=22.2 p99=30.1 rec=0.0 integrity_now=True after=True
+== E1 baseline rep3: Application/service instance failure
+   success=0.2509 enroll=0.2449 p95=23.2 p99=28.1 rec=None integrity_now=True after=True
+== E1 improved rep3: Application/service instance failure
+   success=0.9988 enroll=0.9959 p95=26.3 p99=83.1 rec=0.0 integrity_now=True after=True
+== E2 baseline rep1: Database unavailable
+   success=0.7466 enroll=0.7563 p95=23.4 p99=26.4 rec=11.0 integrity_now=True after=True
+== E2 improved rep1: Database unavailable
+   success=0.7615 enroll=0.7647 p95=984.8 p99=1161.9 rec=10.0 integrity_now=True after=True
+== E2 baseline rep2: Database unavailable
+   success=0.7478 enroll=0.7429 p95=22.7 p99=25.9 rec=11.0 integrity_now=True after=True
+== E2 improved rep2: Database unavailable
+   success=0.764 enroll=0.7633 p95=935.4 p99=1173.7 rec=10.0 integrity_now=True after=True
+== E2 baseline rep3: Database unavailable
+   success=0.7478 enroll=0.7143 p95=23.4 p99=27.1 rec=11.0 integrity_now=True after=True
+== E2 improved rep3: Database unavailable
+   success=0.7653 enroll=0.7388 p95=924.7 p99=1173.2 rec=10.0 integrity_now=True after=True
+== E3a baseline rep1: Network delay on course-service (3 s added latency)
+   success=1.0 enroll=1.0 p95=3024.4 p99=3029.1 rec=0.0 integrity_now=True after=True
+== E3a improved rep1: Network delay on course-service (3 s added latency)
+   success=0.8377 enroll=0.4538 p95=22.6 p99=1109.1 rec=21.0 integrity_now=False after=True
+== E3a baseline rep2: Network delay on course-service (3 s added latency)
+   success=1.0 enroll=1.0 p95=3025.6 p99=3030.5 rec=0.0 integrity_now=True after=True
+== E3a improved rep2: Network delay on course-service (3 s added latency)
+   success=0.8365 enroll=0.4653 p95=20.1 p99=1071.2 rec=20.0 integrity_now=False after=True
+== E3a baseline rep3: Network delay on course-service (3 s added latency)
+   success=1.0 enroll=1.0 p95=3024.7 p99=3029.4 rec=0.0 integrity_now=True after=True
+== E3a improved rep3: Network delay on course-service (3 s added latency)
+   success=0.8402 enroll=0.4776 p95=23.9 p99=1097.2 rec=20.0 integrity_now=False after=True
+== E3b baseline rep1: Transient dependency errors (30% of course-service calls return 503)
+   success=0.96 enroll=0.8655 p95=24.7 p99=28.2 rec=6.0 integrity_now=True after=True
+== E3b improved rep1: Transient dependency errors (30% of course-service calls return 503)
+   success=0.995 enroll=0.9832 p95=29.7 p99=196.1 rec=0.0 integrity_now=True after=True
+== E3b baseline rep2: Transient dependency errors (30% of course-service calls return 503)
+   success=0.9563 enroll=0.8571 p95=25.2 p99=28.9 rec=10.0 integrity_now=True after=True
+== E3b improved rep2: Transient dependency errors (30% of course-service calls return 503)
+   success=0.9988 enroll=0.9959 p95=28.5 p99=117.6 rec=0.0 integrity_now=True after=True
+== E3b baseline rep3: Transient dependency errors (30% of course-service calls return 503)
+   success=0.9513 enroll=0.8408 p95=25.6 p99=29.7 rec=13.0 integrity_now=True after=True
+== E3b improved rep3: Transient dependency errors (30% of course-service calls return 503)
+   success=0.9713 enroll=0.9061 p95=35.1 p99=213.2 rec=0.0 integrity_now=True after=True
+== E4 baseline rep1: Interrupted multi-step transaction (crash after seat reservation)
+   success=0.9813 enroll=0.937 p95=30.7 p99=1028.9 rec=1.0 integrity_now=False after=False
+== E4 improved rep1: Interrupted multi-step transaction (crash after seat reservation)
+   success=1.0 enroll=1.0 p95=21.5 p99=27.1 rec=0.0 integrity_now=True after=True
+== E4 baseline rep2: Interrupted multi-step transaction (crash after seat reservation)
+   success=0.9825 enroll=0.9429 p95=28.3 p99=1034.1 rec=1.0 integrity_now=False after=False
+== E4 improved rep2: Interrupted multi-step transaction (crash after seat reservation)
+   success=1.0 enroll=1.0 p95=20.4 p99=26.0 rec=0.0 integrity_now=True after=True
+== E4 baseline rep3: Interrupted multi-step transaction (crash after seat reservation)
+   success=0.985 enroll=0.951 p95=32.1 p99=1030.0 rec=1.0 integrity_now=False after=False
+== E4 improved rep3: Interrupted multi-step transaction (crash after seat reservation)
+   success=1.0 enroll=1.0 p95=22.7 p99=29.2 rec=0.0 integrity_now=True after=True
+== E6 baseline rep1: Monitoring and alert trigger (notification-service failing)
+   success=0.8602 enroll=0.5263 p95=24.5 p99=28.4 rec=20.0 integrity_now=True after=True
+== E6 improved rep1: Monitoring and alert trigger (notification-service failing)
+   success=1.0 enroll=1.0 p95=21.5 p99=25.9 rec=0.0 integrity_now=True after=True
+== E6 baseline rep2: Monitoring and alert trigger (notification-service failing)
+   success=0.8524 enroll=0.5074 p95=25.2 p99=27.3 rec=20.0 integrity_now=True after=True
+== E6 improved rep2: Monitoring and alert trigger (notification-service failing)
+   success=1.0 enroll=1.0 p95=22.0 p99=27.1 rec=0.0 integrity_now=True after=True
+== E6 baseline rep3: Monitoring and alert trigger (notification-service failing)
+   success=0.8546 enroll=0.5166 p95=26.2 p99=30.2 rec=20.0 integrity_now=True after=True
+== E6 improved rep3: Monitoring and alert trigger (notification-service failing)
+   success=1.0 enroll=1.0 p95=22.2 p99=27.5 rec=0.0 integrity_now=True after=True
+== E5 baseline rep1: High load / traffic spike
+   success=1.0 enroll=1.0 p95=49.1 p99=90.6 rec=None integrity_now=True after=True
+== E5 improved rep1: High load / traffic spike
+   success=1.0 enroll=1.0 p95=35.6 p99=67.0 rec=None integrity_now=True after=True
+== E5 baseline rep2: High load / traffic spike
+   success=1.0 enroll=1.0 p95=35.7 p99=54.1 rec=None integrity_now=True after=True
+== E5 improved rep2: High load / traffic spike
+   success=1.0 enroll=1.0 p95=32.4 p99=54.5 rec=None integrity_now=True after=True

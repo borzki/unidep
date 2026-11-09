@@ -1,0 +1,24 @@
+digraph G {
+  rankdir=LR; fontname="Helvetica"; node [fontname="Helvetica", fontsize=11, shape=box, style="rounded,filled", fillcolor="#F4F6F8", color="#5A6772"];
+  edge [fontname="Helvetica", fontsize=9, color="#5A6772"];
+  client [label="Students / Admin\n(HTTP + JWT)", shape=ellipse, fillcolor="#FFFFFF"];
+  gw [label="API Gateway :8000\nround-robin LB · health-check ejection\nfailover (GET / Idempotency-Key)\nrate limit · body limit · request-id", fillcolor="#E3ECF7"];
+  subgraph cluster_svc { label="stateless services (replicated in improved profile)"; color="#AAB4BE"; style=dashed; fontsize=10;
+    auth [label="auth-service\nJWT · lockout · audit"];
+    course [label="course-service ×2\ncatalogue · seat reservation\n(idempotent per enrollment)"];
+    enr [label="enrollment-service ×2\nworkflow orchestrator\nidempotency · checkpoint recovery\ntimeouts · retries · circuit breaker\noutbox dispatcher", fillcolor="#E8F2E8"];
+    notif [label="notification-service\ndeduplicated"];
+  }
+  db [label="PostgreSQL 16\nschemas: auth · course ·\nenrollment(+outbox) · notification\nSPOF → pg_dump backup / restore", shape=cylinder, fillcolor="#FBEFE3"];
+  prom [label="Prometheus\n7 alert rules", fillcolor="#FFF7DB"];
+  graf [label="Grafana\ndashboard", fillcolor="#FFF7DB"];
+  sup [label="Supervisor / Docker\nrestart policy", shape=component, fillcolor="#FFFFFF"];
+  client -> gw;
+  gw -> auth; gw -> course; gw -> enr; gw -> notif;
+  enr -> course [label="POST /internal/reservations\n(internal token, 1 s timeout)"];
+  enr -> notif [label="outbox → /internal/notifications", style=dashed];
+  auth -> db; course -> db; enr -> db; notif -> db;
+  prom -> gw [style=dotted, arrowhead=none, label="scrape /metrics 2 s"];
+  prom -> graf [style=dotted, dir=back];
+  sup -> enr [style=dotted, arrowhead=none];
+}

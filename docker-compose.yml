@@ -1,0 +1,121 @@
+# UniDep - container deployment.
+#   improved: docker compose --env-file deploy/docker/improved.env --profile replicas up -d --build
+#   baseline: docker compose --env-file deploy/docker/baseline.env up -d --build
+# Grafana: http://localhost:3000 (anonymous viewer), Prometheus: http://localhost:9090
+# NOTE: CHAOS_ENABLED=1 exposes the token-protected /chaos endpoint for fault
+# injection. Use only in an isolated test environment.
+
+x-svc: &svc
+  build: .
+  image: unidep:latest
+  restart: ${RESTART_POLICY:-unless-stopped}
+  environment: &env
+    RESILIENCE_MODE: ${RESILIENCE_MODE:-improved}
+    DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-devpass}@postgres:5432/unidep
+    JWT_SECRET: ${JWT_SECRET:-dev-only-not-a-secret-change-me-32b+}
+    INTERNAL_TOKEN: ${INTERNAL_TOKEN:-dev-internal-token}
+    CHAOS_TOKEN: ${CHAOS_TOKEN:-dev-chaos-token}
+    CHAOS_ENABLED: "1"
+    COURSE_URLS: ${COURSE_URLS:-http://course-1:8000}
+    NOTIFICATION_URLS: http://notification-1:8000
+  healthcheck:
+    test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=1).status==200 else 1)"]
+    interval: 5s
+    timeout: 2s
+    retries: 3
+    start_period: 10s
+  depends_on:
+    db-init: {condition: service_completed_successfully}
+  deploy:
+    resources:
+      limits: {cpus: "0.50", memory: 256M}
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-devpass}
+      POSTGRES_DB: unidep
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d unidep"]
+      interval: 3s
+      timeout: 2s
+      retries: 10
+    ports: ["5432:5432"]
+
+  db-init:
+    image: unidep:latest
+    build: .
+    restart: "no"
+    environment:
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-devpass}@postgres:5432/unidep
+    command: ["python", "-m", "db.reset", "--mode", "${RESILIENCE_MODE:-improved}", "--students", "500", "--if-empty"]
+    depends_on:
+      postgres: {condition: service_healthy}
+
+  auth-1:
+    <<: *svc
+    environment: {<<: *env, SERVICE_NAME: auth, INSTANCE_ID: "1"}
+
+  course-1:
+    <<: *svc
+    environment: {<<: *env, SERVICE_NAME: course, INSTANCE_ID: "1"}
+    ports: ["8201:8000"]
+
+  course-2:
+    <<: *svc
+    profiles: [replicas]
+    environment: {<<: *env, SERVICE_NAME: course, INSTANCE_ID: "2"}
+    ports: ["8202:8000"]
+
+  enrollment-1:
+    <<: *svc
+    environment: {<<: *env, SERVICE_NAME: enrollment, INSTANCE_ID: "1"}
+    ports: ["8301:8000"]
+
+  enrollment-2:
+    <<: *svc
+    profiles: [replicas]
+    environment: {<<: *env, SERVICE_NAME: enrollment, INSTANCE_ID: "2"}
+    ports: ["8302:8000"]
+
+  notification-1:
+    <<: *svc
+    environment: {<<: *env, SERVICE_NAME: notification, INSTANCE_ID: "1"}
+    ports: ["8401:8000"]
+
+  gateway:
+    <<: *svc
+    environment:
+      <<: *env
+      SERVICE_NAME: gateway
+      UPSTREAMS: ${UPSTREAMS:-auth=http://auth-1:8000;course=http://course-1:8000;enrollment=http://enrollment-1:8000;notification=http://notification-1:8000}
+    ports: ["8000:8000"]
+    depends_on:
+      auth-1: {condition: service_started}
+      course-1: {condition: service_started}
+      enrollment-1: {condition: service_started}
+      notification-1: {condition: service_started}
+
+  prometheus:
+    image: prom/prometheus:v2.54.1
+    restart: unless-stopped
+    command: ["--config.file=/etc/prometheus/${PROM_CONFIG:-prometheus-improved.yml}", "--web.enable-lifecycle"]
+    volumes: ["./deploy/prometheus:/etc/prometheus:ro"]
+    ports: ["9090:9090"]
+
+  grafana:
+    image: grafana/grafana:11.2.0
+    restart: unless-stopped
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Viewer
+    volumes:
+      - ./deploy/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./deploy/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports: ["3000:3000"]
+
+volumes:
+  pgdata:

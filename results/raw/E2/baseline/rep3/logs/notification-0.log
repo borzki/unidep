@@ -1,0 +1,384 @@
+{"ts": "2026-11-08T17:24:13.262Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "496f71e9a57747bb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 5.0}
+{"ts": "2026-11-08T17:24:13.296Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "c2d3f80b13d2487a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.9}
+{"ts": "2026-11-08T17:24:13.346Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "606c804a75db4bb3", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:13.944Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "cbe832e016a84072", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:13.993Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "c142bc7fe8934ffa", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:14.043Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e9cfa7f35d164d63", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:14.149Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7914caf901dd4a66", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 7.5}
+{"ts": "2026-11-08T17:24:14.597Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "935242c8a19e40f8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:14.694Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "4b971b1d6150442e", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:14.846Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "bd1368f3854145e5", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:14.897Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d22c7425aa344fa7", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.6}
+{"ts": "2026-11-08T17:24:15.149Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "4b0e6020b2464a0e", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.2}
+{"ts": "2026-11-08T17:24:15.342Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "998c7c34fb554867", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:15.394Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "edd3494c870e4d5d", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:15.443Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0f1e687257c54c91", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:15.595Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b6fb2056e9cf4d47", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:15.749Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "14bb684673e54946", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:15.796Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "898940f2d5714d99", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.6}
+{"ts": "2026-11-08T17:24:15.996Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0684c2d4224646a3", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.5}
+{"ts": "2026-11-08T17:24:16.193Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "5188187f8c0a452c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:16.248Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "32d57a701e00453f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.9}
+{"ts": "2026-11-08T17:24:16.343Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "1e81cbfafb2a476a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:16.395Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ba7aa256dd4f4a36", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:16.845Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "31e0697a925748e8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:17.248Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ba1c0712adb9454c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:17.348Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "53e53420ca49489c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.5}
+{"ts": "2026-11-08T17:24:17.396Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "094854cdaf814450", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:17.546Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "55f6fadbc23540f0", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.4}
+{"ts": "2026-11-08T17:24:17.597Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "3a414edf8f064ff5", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.3}
+{"ts": "2026-11-08T17:24:17.697Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "abc73a73c59a4588", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.4}
+{"ts": "2026-11-08T17:24:17.748Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "2511cb3af5004b2f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.6}
+{"ts": "2026-11-08T17:24:17.896Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ce2a5fc86c6a4139", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.3}
+{"ts": "2026-11-08T17:24:18.046Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e9fb023dcd2e40e7", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.3}
+{"ts": "2026-11-08T17:24:18.145Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "5160e74f6d2742c7", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:18.246Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a8e9d5115afe4587", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:18.397Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "9fce23d83b994c7c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:18.495Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "4c1f60f1df1941e5", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:18.795Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "bc68656e8f174beb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.3}
+{"ts": "2026-11-08T17:24:18.896Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b38f62e236f545e7", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:19.047Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a2b8170063e345ec", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.8}
+{"ts": "2026-11-08T17:24:19.544Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "f02f807f484f4b13", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:19.596Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "5c984dbee33543cb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:19.750Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "968109eed5d246a6", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:20.092Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "070b34fdd0114ad0", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:20.141Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "5d546f96dc864200", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.2}
+{"ts": "2026-11-08T17:24:20.243Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "301d300dd2d54b00", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:20.948Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "41e9e6e1e75745d8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.9}
+{"ts": "2026-11-08T17:24:21.041Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a457201f2de342a3", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:21.094Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0cbb5b161f3f4066", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:21.141Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "91384ad4a54145bb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:21.295Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ff07232734e648fd", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.8}
+{"ts": "2026-11-08T17:24:21.341Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "3d7d6e66a8ff4796", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:21.444Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7f9fca884dd94d9b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:21.692Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "3e2cec1913d54122", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:21.893Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "cc66f5d432614ebc", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:22.199Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "17104470438242ed", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:22.245Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "8748a811d0724928", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:22.293Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "75ad5d07203245c0", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:22.445Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "67899ee1eb944c30", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:22.646Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "6bce0e7b96684495", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+Failed to restore the pool connection floor; retrying
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 564, in _maintain_min_size
+    await holder.connect()
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 172, in connect
+    con = await self._pool._get_new_connection()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 655, in _get_new_connection
+    con = await self._connect(
+          ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2498, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1307, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+    ...<2 lines>...
+    )
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1278, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1092, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1162, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1004, in _create_ssl_connection
+    do_ssl_upgrade = await pr.on_data
+                     ^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 1011, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+ConnectionResetError: [Errno 104] Connection reset by peer
+Failed to restore the pool connection floor; retrying
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 564, in _maintain_min_size
+    await holder.connect()
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 172, in connect
+    con = await self._pool._get_new_connection()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 655, in _get_new_connection
+    con = await self._connect(
+          ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2498, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1307, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+    ...<2 lines>...
+    )
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1278, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1092, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1162, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 996, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        host, port)
+        ^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1172, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1147, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+        exceptions, addrinfo, laddr_infos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1046, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 643, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 683, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+Failed to restore the pool connection floor; retrying
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 564, in _maintain_min_size
+    await holder.connect()
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 172, in connect
+    con = await self._pool._get_new_connection()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 655, in _get_new_connection
+    con = await self._connect(
+          ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2498, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1307, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+    ...<2 lines>...
+    )
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1278, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1092, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1162, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 996, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        host, port)
+        ^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1172, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1147, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+        exceptions, addrinfo, laddr_infos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1046, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 643, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 683, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+Failed to restore the pool connection floor; retrying
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 564, in _maintain_min_size
+    await holder.connect()
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 172, in connect
+    con = await self._pool._get_new_connection()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/pool.py", line 655, in _get_new_connection
+    con = await self._connect(
+          ^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connection.py", line 2498, in connect
+    return await connect_utils._connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1307, in _connect
+    raise last_error or exceptions.TargetServerAttributeNotMatched(
+    ...<2 lines>...
+    )
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1278, in _connect
+    conn = await _connect_addr(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1092, in _connect_addr
+    return await __connect_addr(params, True, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 1162, in __connect_addr
+    tr, pr = await connector
+             ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/site-packages/asyncpg/connect_utils.py", line 996, in _create_ssl_connection
+    tr, pr = await loop.create_connection(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        host, port)
+        ^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1172, in create_connection
+    raise exceptions[0]
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1147, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+        exceptions, addrinfo, laddr_infos)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/base_events.py", line 1046, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 643, in sock_connect
+    return await fut
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.13/asyncio/selector_events.py", line 683, in _sock_connect_cb
+    raise OSError(err, f'Connect call failed {address}')
+ConnectionRefusedError: [Errno 111] Connect call failed ('127.0.0.1', 5432)
+{"ts": "2026-11-08T17:24:33.060Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "07dddb8357f9437a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 7.1}
+{"ts": "2026-11-08T17:24:33.393Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "33c5fbfe5dce47a8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:33.493Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7e4cb104d4214bde", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:33.847Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e020113e51ed47df", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:33.996Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "dcff73229995479c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:34.092Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "305050dbd9b54def", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:34.140Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "48979d19b51849bd", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.2}
+{"ts": "2026-11-08T17:24:34.242Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "247dd26872654c75", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:34.344Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "4ab04246ee49422c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:34.393Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "2164e524dfcb458a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:34.494Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b6b6f3e6ce9f4ed2", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:34.693Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ab17f93ecb024f06", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:34.743Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b8167d48f56a4a28", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:34.843Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "c6cd5b9c5ce94122", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:34.892Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7c77eb84904b47f6", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:35.043Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "f8b540a604e94bcf", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:35.191Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7e8cf1f9844c4cb4", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:35.444Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "38bd244fbe1545a2", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:35.846Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "290803a09888481f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.2}
+{"ts": "2026-11-08T17:24:36.391Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a809237118294718", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:36.546Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "15cda06539b34a53", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.4}
+{"ts": "2026-11-08T17:24:36.691Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "eccb911cb1874db8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:36.843Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7bb8aa2065cb41a1", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:36.993Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "4dcf925b78644924", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:37.146Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "99488c5335a94e80", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:37.195Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "25b7d1b77a224f49", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:37.463Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "176b9ba2392e4a1b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:37.542Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "86c4492797de47de", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:37.641Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "96ddbfba19e34bf1", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:37.746Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ecb5eb75ffe44190", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.3}
+{"ts": "2026-11-08T17:24:37.793Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "f1069936253940f7", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:37.841Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "21c11fc74514476d", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:37.893Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "59c5e00ab15e474f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:37.945Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "9123c2b9c7064c0b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:38.146Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "865433cf584b4d05", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:38.297Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "365b7eead6bd4ed5", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.5}
+{"ts": "2026-11-08T17:24:38.894Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0d6b65cb7f8e48ec", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:39.142Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "6db83e8791ae438e", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:39.344Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "3ec30732ab96467b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:39.893Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a5a0ee9d859c4602", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:39.942Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "342cfef7dc4d4847", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:39.994Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "457ab1c6fd15403d", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:40.194Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "102d6fb816a74a97", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:40.243Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "68c67b6e61534d9f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:40.291Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b2e3e6d6442f4757", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:40.346Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0bebd19f8a9b43d8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:40.591Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "655ae440a556451a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:40.743Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b343e632d2764c45", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:40.844Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "f04b6eaedf894d19", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:40.992Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e667132512e04d52", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:41.042Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e8452b8bf531448a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:41.142Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "fb8267c3c5bf4536", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:41.242Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a801b495fe64465d", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:41.343Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "2799be48a2ff4050", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:41.496Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ff5487c870ff4ee2", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:41.894Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d66cb74cb11d4c8f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:42.045Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "195fd19b24f04e5e", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.5}
+{"ts": "2026-11-08T17:24:42.393Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "5f3f47a5f7af4212", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:42.644Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d7d174850ba74e98", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:42.746Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "36327b697bb64b0f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:42.796Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "42d3a9ae6be143fb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.7}
+{"ts": "2026-11-08T17:24:42.947Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0c9ea70516484c48", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.3}
+{"ts": "2026-11-08T17:24:43.245Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "6e2068e624994cc9", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:43.544Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "42e1789657604c0f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:43.750Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "132c58ce65054562", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.1}
+{"ts": "2026-11-08T17:24:43.794Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "dc09ee2d920d4982", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.3}
+{"ts": "2026-11-08T17:24:43.893Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "06e6f558a5ae403b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:43.943Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "8c610d2340b643bb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:43.991Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0230ed0acbb44dc6", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:44.142Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "2c976e4b53fd4004", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:44.341Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "0fbc1b86076947ee", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:44.392Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "aeb38952a96a40c8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:44.895Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "376ba0c3c18c47a0", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:45.143Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "72f3021936f1439d", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:45.245Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "59188ecfe31444ea", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:45.344Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "dd6912ac0cff4a69", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.7}
+{"ts": "2026-11-08T17:24:45.444Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "6c41cafb6c47441a", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:45.493Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "73f00218c5fd4882", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:45.693Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d39def24d0d34fa8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:45.744Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "15a600d2c9dc4e9c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:45.792Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "9446d89b8ff94b0b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:45.944Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "6c3baeefc50f4dfa", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:46.444Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d955b30410124f99", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:46.643Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b4ad3b1b8e8c413d", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:46.747Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "ea170a84cfa94729", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.1}
+{"ts": "2026-11-08T17:24:46.843Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "37e66ce55b6f49d9", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:47.494Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e0db5616512f41fb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:47.696Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "71d282a6130f448f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.5}
+{"ts": "2026-11-08T17:24:47.793Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "2a3d20cee9f04fdb", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:48.192Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b784a914f8db4b8b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:48.592Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e91c0c52e5fb4976", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:48.694Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "13380f97ba6e4890", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:49.342Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d43e1ae2c3f34bd7", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:49.444Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "4119ebfc18b94698", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:49.744Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "d085aedb86844c3b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:49.892Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "33adcefa2e0e47be", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.3}
+{"ts": "2026-11-08T17:24:49.950Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "2d4685d550444da8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:49.994Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "9820d58e61f54b76", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:50.046Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "9d6bfd24f603475c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 4.0}
+{"ts": "2026-11-08T17:24:50.394Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "a8163051390046d2", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:50.592Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "819ef2c35ca440c5", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:50.693Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "17326cb2e01741ad", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:50.843Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e5049d3d863e40af", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:50.893Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "9a3b07fc71c24c77", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.5}
+{"ts": "2026-11-08T17:24:50.943Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "7a4a1155da104447", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:51.145Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "73f1d0424c8e4bde", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.4}
+{"ts": "2026-11-08T17:24:51.193Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "e340a98201cc4a16", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:51.344Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "658f623ba7944203", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.8}
+{"ts": "2026-11-08T17:24:51.545Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "fdd72250ed134e7f", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:51.945Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "34b8bb23539c4acc", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.6}
+{"ts": "2026-11-08T17:24:52.194Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "671dc9c73def49fa", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.2}
+{"ts": "2026-11-08T17:24:52.345Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "b519b59744254944", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 3.0}
+{"ts": "2026-11-08T17:24:52.395Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "af4ddebb198c419c", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.9}
+{"ts": "2026-11-08T17:24:52.594Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "f653560b2e1943d8", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 2.7}
+{"ts": "2026-11-08T17:24:52.702Z", "level": "INFO", "service": "notification", "instance": "0", "request_id": "39932cc906e6466b", "msg": "request", "method": "POST", "route": "/internal/notifications", "status": 200, "duration_ms": 6.0}

@@ -1,0 +1,117 @@
+{
+  "mode": "baseline",
+  "duration_s": 300.0,
+  "rps": 10,
+  "mean_interfault_s": 40,
+  "seed": 7,
+  "fault_schedule": [
+    [
+      25.7,
+      "course"
+    ],
+    [
+      45.7,
+      "course"
+    ],
+    [
+      48.7,
+      "course"
+    ],
+    [
+      67.0,
+      "course"
+    ],
+    [
+      163.1,
+      "course"
+    ],
+    [
+      164.7,
+      "enrollment"
+    ],
+    [
+      186.3,
+      "course"
+    ],
+    [
+      190.1,
+      "enrollment"
+    ],
+    [
+      192.6,
+      "course"
+    ]
+  ],
+  "repairs": [
+    {
+      "at_s": 25.7,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.73
+    },
+    {
+      "at_s": 45.7,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.63
+    },
+    {
+      "at_s": 48.7,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.69
+    },
+    {
+      "at_s": 67.0,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.59
+    },
+    {
+      "at_s": 163.1,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.65
+    },
+    {
+      "at_s": 164.7,
+      "service": "enrollment",
+      "instance": 0,
+      "component_repair_s": 1.75
+    },
+    {
+      "at_s": 186.3,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.73
+    },
+    {
+      "at_s": 190.1,
+      "service": "enrollment",
+      "instance": 0,
+      "component_repair_s": 1.75
+    },
+    {
+      "at_s": 192.6,
+      "service": "course",
+      "instance": 0,
+      "component_repair_s": 1.63
+    }
+  ],
+  "integrity": {
+    "enrollments_total": 897,
+    "confirmed": 858,
+    "pending_left": 0,
+    "failed": 39,
+    "duplicate_active_enrollments": 0,
+    "reservations_total": 858,
+    "duplicate_reservations": 0,
+    "seat_counter_mismatch": 0,
+    "leaked_seats": 0,
+    "confirmed_without_seat": 0,
+    "confirmed_without_notification": 0,
+    "duplicate_notifications": 0,
+    "acked_but_not_confirmed": 0,
+    "integrity_ok": true
+  }
+}

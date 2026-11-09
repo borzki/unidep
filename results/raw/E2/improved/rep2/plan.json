@@ -1,0 +1,13 @@
+{
+  "title": "Database unavailable",
+  "hypothesis": "During a 10 s PostgreSQL outage requests fail fast (no hang, no partial writes); after the DB returns the system recovers automatically within 5 s with zero integrity violations.",
+  "workload": "Workload(rps=20, duration=40, read_ratio=0.7, client_retries=0, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[])",
+  "fault_start": 10,
+  "fault_end": 20,
+  "events": 2,
+  "fault": "pg_ctl stop -m immediate at t=10 s, start at t=20 s",
+  "success": "HTTP 2xx",
+  "mode": "improved",
+  "rep": 2,
+  "t_start_unix": 1794158588.6980963
+}

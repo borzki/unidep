@@ -1,0 +1,14 @@
+{
+  "title": "Interrupted multi-step transaction (crash after seat reservation)",
+  "hypothesis": "With idempotency keys + checkpoint recovery, a crash between 'seat reserved' and 'enrollment confirmed' produces no duplicate enrollments, no leaked seats and no lost acknowledged enrollments; baseline produces duplicates/orphans.",
+  "workload": "Workload(rps=20, duration=40, read_ratio=0.7, client_retries=1, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[])",
+  "fault_start": 10,
+  "fault_end": 40,
+  "restart": "on",
+  "events": 3,
+  "fault": "enrollment:0 hard-exits (os._exit) after reserving a seat, armed at t=10, 20, 30 s; restart policy ON in both modes to isolate the transaction mechanisms; client retries once with the same Idempotency-Key",
+  "success": "HTTP 2xx",
+  "mode": "improved",
+  "rep": 3,
+  "t_start_unix": 1794159838.642612
+}

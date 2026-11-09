@@ -1,0 +1,26 @@
+collecting ... collected 22 items
+
+tests/test_acceptance.py::test_AC1_enrollment_workflow_confirms_and_notifies PASSED [  4%]
+tests/test_acceptance.py::test_AC2_idempotent_replay_returns_same_enrollment PASSED [  9%]
+tests/test_acceptance.py::test_AC3_duplicate_enrollment_rejected PASSED  [ 13%]
+tests/test_acceptance.py::test_AC4_missing_idempotency_key_rejected PASSED [ 18%]
+tests/test_acceptance.py::test_AC5_authentication_required PASSED        [ 22%]
+tests/test_acceptance.py::test_AC6_rbac_student_cannot_create_course PASSED [ 27%]
+tests/test_acceptance.py::test_AC7_input_validation PASSED               [ 31%]
+tests/test_acceptance.py::test_AC8_internal_endpoints_not_exposed PASSED [ 36%]
+tests/test_acceptance.py::test_AC9_readiness_reports_dependencies PASSED [ 40%]
+tests/test_mechanisms.py::test_breaker_opens_after_threshold_and_blocks PASSED [ 45%]
+tests/test_mechanisms.py::test_breaker_half_open_single_trial_then_close PASSED [ 50%]
+tests/test_mechanisms.py::test_breaker_half_open_failure_reopens PASSED  [ 54%]
+tests/test_mechanisms.py::test_breaker_disabled_never_blocks PASSED      [ 59%]
+tests/test_mechanisms.py::test_backoff_is_bounded_and_exponential PASSED [ 63%]
+tests/test_mechanisms.py::test_retry_masks_transient_failures_and_rotates_replicas PASSED [ 68%]
+tests/test_mechanisms.py::test_retries_are_bounded PASSED                [ 72%]
+tests/test_mechanisms.py::test_non_idempotent_calls_are_not_retried PASSED [ 77%]
+tests/test_mechanisms.py::test_4xx_is_not_a_dependency_failure PASSED    [ 81%]
+tests/test_mechanisms.py::test_timeout_is_enforced PASSED                [ 86%]
+tests/test_mechanisms.py::test_open_circuit_fails_fast_without_calling_dependency PASSED [ 90%]
+tests/test_mechanisms.py::test_password_hash_roundtrip_and_salt PASSED   [ 95%]
+tests/test_mechanisms.py::test_token_signature_and_expiry PASSED         [100%]
+
+============================== 22 passed in 0.95s ==============================

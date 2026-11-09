@@ -1,0 +1,34 @@
+{
+  "immediately_after_load": {
+    "enrollments_total": 238,
+    "confirmed": 238,
+    "pending_left": 0,
+    "failed": 0,
+    "duplicate_active_enrollments": 0,
+    "reservations_total": 238,
+    "duplicate_reservations": 0,
+    "seat_counter_mismatch": 0,
+    "leaked_seats": 0,
+    "confirmed_without_seat": 0,
+    "confirmed_without_notification": 0,
+    "duplicate_notifications": 0,
+    "acked_but_not_confirmed": 0,
+    "integrity_ok": true
+  },
+  "after_15s_quiesce": {
+    "enrollments_total": 238,
+    "confirmed": 238,
+    "pending_left": 0,
+    "failed": 0,
+    "duplicate_active_enrollments": 0,
+    "reservations_total": 238,
+    "duplicate_reservations": 0,
+    "seat_counter_mismatch": 0,
+    "leaked_seats": 0,
+    "confirmed_without_seat": 0,
+    "confirmed_without_notification": 0,
+    "duplicate_notifications": 0,
+    "acked_but_not_confirmed": 0,
+    "integrity_ok": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "all": {
+    "n": 5400,
+    "success": 5400,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 10.1,
+    "p95_ms": 32.4,
+    "p99_ms": 54.5,
+    "max_ms": 111.7,
+    "status_counts": {
+      "200": 3810,
+      "201": 1590
+    }
+  },
+  "enroll": {
+    "n": 1590,
+    "success": 1590,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 21.9,
+    "p95_ms": 45.2,
+    "p99_ms": 78.9,
+    "max_ms": 111.7,
+    "status_counts": {
+      "201": 1590
+    }
+  },
+  "read": {
+    "n": 3810,
+    "success": 3810,
+    "failed": 0,
+    "success_ratio": 1.0,
+    "p50_ms": 8.8,
+    "p95_ms": 18.4,
+    "p99_ms": 40.3,
+    "max_ms": 69.4,
+    "status_counts": {
+      "200": 3810
+    }
+  },
+  "steps": {
+    "20": {
+      "n": 400,
+      "success": 400,
+      "failed": 0,
+      "success_ratio": 1.0,
+      "p50_ms": 10.2,
+      "p95_ms": 23.3,
+      "p99_ms": 26.2,
+      "max_ms": 37.7,
+      "status_counts": {
+        "200": 282,
+        "201": 118
+      },
+      "offered_rps": 20,
+      "throughput_ok_rps": 20.0
+    },
+    "50": {
+      "n": 1000,
+      "success": 1000,
+      "failed": 0,
+      "success_ratio": 1.0,
+      "p50_ms": 9.6,
+      "p95_ms": 22.9,
+      "p99_ms": 30.2,
+      "max_ms": 39.4,
+      "status_counts": {
+        "200": 692,
+        "201": 308
+      },
+      "offered_rps": 50,
+      "throughput_ok_rps": 50.0
+    },
+    "80": {
+      "n": 1600,
+      "success": 1600,
+      "failed": 0,
+      "success_ratio": 1.0,
+      "p50_ms": 9.7,
+      "p95_ms": 27.2,
+      "p99_ms": 38.2,
+      "max_ms": 83.3,
+      "status_counts": {
+        "200": 1140,
+        "201": 460
+      },
+      "offered_rps": 80,
+      "throughput_ok_rps": 80.0
+    },
+    "120": {
+      "n": 2400,
+      "success": 2400,
+      "failed": 0,
+      "success_ratio": 1.0,
+      "p50_ms": 11.5,
+      "p95_ms": 41.8,
+      "p99_ms": 68.7,
+      "max_ms": 111.7,
+      "status_counts": {
+        "200": 1696,
+        "201": 704
+      },
+      "offered_rps": 120,
+      "throughput_ok_rps": 120.0
+    }
+  }
+}

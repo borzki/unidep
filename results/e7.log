@@ -1,0 +1,36 @@
+== E7 baseline
+   S1 PASS No token on protected endpoint: expected 401 got 401
+   S2 PASS Forged admin token (wrong signing key): expected 401 got 401
+   S3 PASS alg=none token: expected 401 got 401
+   S4 PASS Expired token: expected 401 got 401
+   S5 PASS Student calls admin-only operation (create course): expected 403 got 403
+   S6 PASS IDOR: student reads another student's enrollment: expected 404 got 404
+   S7 PASS IDOR: student cancels another student's enrollment: expected 404 got 404
+   S8 PASS Internal API through gateway: expected 404 got 404
+   S9 PASS Internal API directly without service token: expected 403 got 403
+   S10 PASS SQL-injection payload in course code (admin): expected 422 got 422
+   S11 PASS SQL-injection payload as username: expected 422 got 422
+   S12 PASS Oversized payload (100 KB): expected 413 got 413
+   S13 PASS Idempotency-Key reused for a different request: expected [201, 409] got 201
+   S14 PASS Chaos endpoint without token: expected 403 got 403
+   S15 PASS Brute-force login (7 wrong, then correct password): expected 401x5,429x2,then 429 got 401x5,429x2,then 429
+   S16 PASS Request flood from one user (120 concurrent): expected not throttled got not throttled
+   passed 16/16
+== E7 improved
+   S1 PASS No token on protected endpoint: expected 401 got 401
+   S2 PASS Forged admin token (wrong signing key): expected 401 got 401
+   S3 PASS alg=none token: expected 401 got 401
+   S4 PASS Expired token: expected 401 got 401
+   S5 PASS Student calls admin-only operation (create course): expected 403 got 403
+   S6 PASS IDOR: student reads another student's enrollment: expected 404 got 404
+   S7 PASS IDOR: student cancels another student's enrollment: expected 404 got 404
+   S8 PASS Internal API through gateway: expected 404 got 404
+   S9 PASS Internal API directly without service token: expected 403 got 403
+   S10 PASS SQL-injection payload in course code (admin): expected 422 got 422
+   S11 PASS SQL-injection payload as username: expected 422 got 422
+   S12 PASS Oversized payload (100 KB): expected 413 got 413
+   S13 PASS Idempotency-Key reused for a different request: expected 422 got 422
+   S14 PASS Chaos endpoint without token: expected 403 got 403
+   S15 PASS Brute-force login (7 wrong, then correct password): expected 401x5,429x2,then 429 got 401x5,429x2,then 429
+   S16 PASS Request flood from one user (120 concurrent): expected throttled got throttled
+   passed 16/16

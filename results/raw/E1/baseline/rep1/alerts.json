@@ -1,0 +1,30 @@
+[
+  {
+    "alert": "HighGatewayErrorRate",
+    "labels": {
+      "severity": "critical"
+    },
+    "first_firing_s": 18.0,
+    "last_firing_s": 55.0
+  },
+  {
+    "alert": "ServiceInstanceDown",
+    "labels": {
+      "instance": "127.0.0.1:8201",
+      "job": "course",
+      "severity": "critical"
+    },
+    "first_firing_s": 18.0,
+    "last_firing_s": 55.0
+  },
+  {
+    "alert": "ServiceInstanceDown",
+    "labels": {
+      "instance": "127.0.0.1:8301",
+      "job": "enrollment",
+      "severity": "critical"
+    },
+    "first_firing_s": 18.0,
+    "last_firing_s": 55.0
+  }
+]

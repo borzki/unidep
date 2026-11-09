@@ -1,0 +1,170 @@
+metric,t,value
+gateway 5xx ratio,14.0,0.06770128879372299
+gateway 5xx ratio,15.0,0.07767474324459069
+gateway 5xx ratio,16.0,0.10434885206183671
+gateway 5xx ratio,17.0,0.12268095331994236
+gateway 5xx ratio,18.0,0.15404424205231737
+gateway 5xx ratio,19.0,0.1752063667335479
+gateway 5xx ratio,20.0,0.18349208872478442
+gateway 5xx ratio,21.0,0.20524028662624502
+gateway 5xx ratio,22.0,0.2202619457795186
+gateway 5xx ratio,23.0,0.2439197400183659
+gateway 5xx ratio,24.0,0.2693002404315711
+gateway 5xx ratio,25.0,0.29166666666666663
+gateway 5xx ratio,26.0,0.2785714285714286
+gateway 5xx ratio,27.0,0.2833333333333333
+gateway 5xx ratio,28.0,0.2939068100358423
+gateway 5xx ratio,29.0,0.29288702928870297
+gateway 5xx ratio,30.0,0.32616487455197135
+gateway 5xx ratio,31.0,0.32217573221757323
+gateway 5xx ratio,32.0,0.2939068100358423
+gateway 5xx ratio,33.0,0.30416666666666664
+gateway 5xx ratio,34.0,0.25978647686832745
+gateway 5xx ratio,35.0,0.2583333333333333
+gateway 5xx ratio,36.0,0.2214285714285714
+gateway 5xx ratio,37.0,0.2
+gateway 5xx ratio,38.0,0.17142857142857143
+gateway 5xx ratio,39.0,0.16666666666666666
+gateway 5xx ratio,40.0,0.14285714285714285
+gateway 5xx ratio,41.0,0.1078838174273859
+gateway 5xx ratio,42.0,0.09252669039145908
+gateway 5xx ratio,43.0,0.02074688796680498
+gateway 5xx ratio,44.0,0.017857142857142856
+gateway 5xx ratio,45.0,0
+gateway 5xx ratio,46.0,0
+gateway 5xx ratio,47.0,0
+gateway 5xx ratio,48.0,0
+gateway 5xx ratio,49.0,0
+gateway 5xx ratio,50.0,0
+gateway 5xx ratio,51.0,0
+gateway 5xx ratio,52.0,0
+gateway 5xx ratio,53.0,0
+gateway 5xx ratio,54.0,0
+gateway 5xx ratio,55.0,0
+gateway 5xx ratio,56.0,0
+gateway 5xx ratio,57.0,0
+gateway 5xx ratio,58.0,0
+gateway 5xx ratio,59.0,0
+gateway 5xx ratio,60.0,0
+circuit breaker state (max),0.0,0
+circuit breaker state (max),1.0,0
+circuit breaker state (max),2.0,0
+circuit breaker state (max),3.0,0
+circuit breaker state (max),4.0,0
+circuit breaker state (max),5.0,0
+circuit breaker state (max),6.0,0
+circuit breaker state (max),7.0,0
+circuit breaker state (max),8.0,0
+circuit breaker state (max),9.0,0
+circuit breaker state (max),10.0,0
+circuit breaker state (max),11.0,0
+circuit breaker state (max),12.0,0
+circuit breaker state (max),13.0,0
+circuit breaker state (max),14.0,0
+circuit breaker state (max),15.0,0
+circuit breaker state (max),16.0,0
+circuit breaker state (max),17.0,0
+circuit breaker state (max),18.0,0
+circuit breaker state (max),19.0,0
+circuit breaker state (max),20.0,0
+circuit breaker state (max),21.0,0
+circuit breaker state (max),22.0,0
+circuit breaker state (max),23.0,0
+circuit breaker state (max),24.0,0
+circuit breaker state (max),25.0,0
+circuit breaker state (max),26.0,0
+circuit breaker state (max),27.0,0
+circuit breaker state (max),28.0,0
+circuit breaker state (max),29.0,0
+circuit breaker state (max),30.0,0
+circuit breaker state (max),31.0,0
+circuit breaker state (max),32.0,0
+circuit breaker state (max),33.0,0
+circuit breaker state (max),34.0,0
+circuit breaker state (max),35.0,0
+circuit breaker state (max),36.0,0
+circuit breaker state (max),37.0,0
+circuit breaker state (max),38.0,0
+circuit breaker state (max),39.0,0
+circuit breaker state (max),40.0,0
+circuit breaker state (max),41.0,0
+circuit breaker state (max),42.0,0
+circuit breaker state (max),43.0,0
+circuit breaker state (max),44.0,0
+circuit breaker state (max),45.0,0
+circuit breaker state (max),46.0,0
+circuit breaker state (max),47.0,0
+circuit breaker state (max),48.0,0
+circuit breaker state (max),49.0,0
+circuit breaker state (max),50.0,0
+circuit breaker state (max),51.0,0
+circuit breaker state (max),52.0,0
+circuit breaker state (max),53.0,0
+circuit breaker state (max),54.0,0
+circuit breaker state (max),55.0,0
+circuit breaker state (max),56.0,0
+circuit breaker state (max),57.0,0
+circuit breaker state (max),58.0,0
+circuit breaker state (max),59.0,0
+circuit breaker state (max),60.0,0
+alerts firing,0.0,0
+alerts firing,1.0,0
+alerts firing,2.0,0
+alerts firing,3.0,0
+alerts firing,4.0,0
+alerts firing,5.0,0
+alerts firing,6.0,0
+alerts firing,7.0,0
+alerts firing,8.0,0
+alerts firing,9.0,0
+alerts firing,10.0,0
+alerts firing,11.0,0
+alerts firing,12.0,0
+alerts firing,13.0,0
+alerts firing,14.0,0
+alerts firing,15.0,0
+alerts firing,16.0,0
+alerts firing,17.0,0
+alerts firing,18.0,1
+alerts firing,19.0,1
+alerts firing,20.0,1
+alerts firing,21.0,1
+alerts firing,22.0,1
+alerts firing,23.0,1
+alerts firing,24.0,1
+alerts firing,25.0,1
+alerts firing,26.0,1
+alerts firing,27.0,1
+alerts firing,28.0,1
+alerts firing,29.0,1
+alerts firing,30.0,1
+alerts firing,31.0,1
+alerts firing,32.0,1
+alerts firing,33.0,1
+alerts firing,34.0,1
+alerts firing,35.0,1
+alerts firing,36.0,1
+alerts firing,37.0,1
+alerts firing,38.0,1
+alerts firing,39.0,1
+alerts firing,40.0,1
+alerts firing,41.0,1
+alerts firing,42.0,1
+alerts firing,43.0,1
+alerts firing,44.0,0
+alerts firing,45.0,0
+alerts firing,46.0,0
+alerts firing,47.0,0
+alerts firing,48.0,0
+alerts firing,49.0,0
+alerts firing,50.0,0
+alerts firing,51.0,0
+alerts firing,52.0,0
+alerts firing,53.0,0
+alerts firing,54.0,0
+alerts firing,55.0,0
+alerts firing,56.0,0
+alerts firing,57.0,0
+alerts firing,58.0,0
+alerts firing,59.0,0
+alerts firing,60.0,0

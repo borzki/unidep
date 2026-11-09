@@ -1,0 +1,25 @@
+{
+  "mode": "improved",
+  "enrolled": 40,
+  "seats_before": 40,
+  "cancelled": 20,
+  "seats_after": 20,
+  "expected_seats_after": 20,
+  "integrity": {
+    "enrollments_total": 40,
+    "confirmed": 20,
+    "pending_left": 0,
+    "failed": 0,
+    "duplicate_active_enrollments": 0,
+    "reservations_total": 20,
+    "duplicate_reservations": 0,
+    "seat_counter_mismatch": 0,
+    "leaked_seats": 0,
+    "confirmed_without_seat": 0,
+    "confirmed_without_notification": 2,
+    "duplicate_notifications": 0,
+    "acked_but_not_confirmed": 0,
+    "integrity_ok": true
+  },
+  "pass": true
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "alert": "InstanceRestarted",
+    "labels": {
+      "instance": "127.0.0.1:8000",
+      "job": "gateway",
+      "severity": "warning"
+    },
+    "first_firing_s": -0.0,
+    "last_firing_s": 11.0
+  },
+  {
+    "alert": "InstanceRestarted",
+    "labels": {
+      "instance": "127.0.0.1:8101",
+      "job": "auth",
+      "severity": "warning"
+    },
+    "first_firing_s": -0.0,
+    "last_firing_s": 11.0
+  },
+  {
+    "alert": "InstanceRestarted",
+    "labels": {
+      "instance": "127.0.0.1:8201",
+      "job": "course",
+      "severity": "warning"
+    },
+    "first_firing_s": -0.0,
+    "last_firing_s": 11.0
+  },
+  {
+    "alert": "InstanceRestarted",
+    "labels": {
+      "instance": "127.0.0.1:8301",
+      "job": "enrollment",
+      "severity": "warning"
+    },
+    "first_firing_s": -0.0,
+    "last_firing_s": 11.0
+  },
+  {
+    "alert": "InstanceRestarted",
+    "labels": {
+      "instance": "127.0.0.1:8401",
+      "job": "notification",
+      "severity": "warning"
+    },
+    "first_firing_s": -0.0,
+    "last_firing_s": 11.0
+  },
+  {
+    "alert": "StuckPendingEnrollments",
+    "labels": {
+      "severity": "info"
+    },
+    "first_firing_s": 14.0,
+    "last_firing_s": 55.0
+  },
+  {
+    "alert": "HighGatewayErrorRate",
+    "labels": {
+      "severity": "critical"
+    },
+    "first_firing_s": 24.0,
+    "last_firing_s": 35.0
+  }
+]

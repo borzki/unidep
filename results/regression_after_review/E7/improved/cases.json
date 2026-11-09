@@ -1,0 +1,130 @@
+[
+  {
+    "id": "S1",
+    "case": "No token on protected endpoint",
+    "expected": 401,
+    "observed": 401,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S2",
+    "case": "Forged admin token (wrong signing key)",
+    "expected": 401,
+    "observed": 401,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S3",
+    "case": "alg=none token",
+    "expected": 401,
+    "observed": 401,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S4",
+    "case": "Expired token",
+    "expected": 401,
+    "observed": 401,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S5",
+    "case": "Student calls admin-only operation (create course)",
+    "expected": 403,
+    "observed": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S6",
+    "case": "IDOR: student reads another student's enrollment",
+    "expected": 404,
+    "observed": 422,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "S7",
+    "case": "IDOR: student cancels another student's enrollment",
+    "expected": 404,
+    "observed": 422,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "S8",
+    "case": "Internal API through gateway",
+    "expected": 404,
+    "observed": 404,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S9",
+    "case": "Internal API directly without service token",
+    "expected": 403,
+    "observed": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S10",
+    "case": "SQL-injection payload in course code (admin)",
+    "expected": 422,
+    "observed": 422,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S11",
+    "case": "SQL-injection payload as username",
+    "expected": 422,
+    "observed": 422,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S12",
+    "case": "Oversized payload (100 KB)",
+    "expected": 413,
+    "observed": 413,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S13",
+    "case": "Idempotency-Key reused for a different request",
+    "expected": 422,
+    "observed": 201,
+    "pass": false,
+    "note": "baseline ignores the key"
+  },
+  {
+    "id": "S14",
+    "case": "Chaos endpoint without token",
+    "expected": 403,
+    "observed": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "S15",
+    "case": "Brute-force login (7 wrong, then correct password)",
+    "expected": "401x5,429x2,then 429",
+    "observed": "401x0,429x7,then 429",
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "S16",
+    "case": "Request flood from one user (120 concurrent)",
+    "expected": "throttled",
+    "observed": "throttled",
+    "pass": true,
+    "note": "103 of 120 got 429"
+  }
+]

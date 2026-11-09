@@ -1,0 +1,44 @@
+{"ts": 1794195425.8957815, "event": "started", "mode": "improved", "restart": true}
+{"ts": 1794195425.8999174, "event": "exited", "service": "auth", "instance": 0, "code": 3}
+{"ts": 1794195426.901079, "event": "restarted", "service": "auth", "instance": 0}
+{"ts": 1794195426.9011397, "event": "exited", "service": "course", "instance": 0, "code": 3}
+{"ts": 1794195427.902415, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794195427.9025629, "event": "exited", "service": "course", "instance": 1, "code": 3}
+{"ts": 1794195428.90353, "event": "restarted", "service": "course", "instance": 1}
+{"ts": 1794195428.9035864, "event": "exited", "service": "notification", "instance": 0, "code": 3}
+{"ts": 1794195429.9080734, "event": "restarted", "service": "notification", "instance": 0}
+{"ts": 1794195429.908157, "event": "exited", "service": "enrollment", "instance": 0, "code": 3}
+{"ts": 1794195430.9094357, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794195430.9095623, "event": "exited", "service": "enrollment", "instance": 1, "code": 3}
+{"ts": 1794195431.9107945, "event": "restarted", "service": "enrollment", "instance": 1}
+{"ts": 1794195431.9109323, "event": "exited", "service": "gateway", "instance": 0, "code": 3}
+{"ts": 1794195432.911955, "event": "restarted", "service": "gateway", "instance": 0}
+{"ts": 1794195433.113579, "event": "exited", "service": "auth", "instance": 0, "code": 3}
+{"ts": 1794195434.1149783, "event": "restarted", "service": "auth", "instance": 0}
+{"ts": 1794195434.1150405, "event": "exited", "service": "course", "instance": 0, "code": 3}
+{"ts": 1794195435.1162703, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794195435.1163332, "event": "exited", "service": "course", "instance": 1, "code": 3}
+{"ts": 1794195436.117315, "event": "restarted", "service": "course", "instance": 1}
+{"ts": 1794195436.1173682, "event": "exited", "service": "notification", "instance": 0, "code": 3}
+{"ts": 1794195437.118479, "event": "restarted", "service": "notification", "instance": 0}
+{"ts": 1794195437.1185322, "event": "exited", "service": "enrollment", "instance": 0, "code": 3}
+{"ts": 1794195438.1197772, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794195438.1198819, "event": "exited", "service": "enrollment", "instance": 1, "code": 3}
+{"ts": 1794195439.1206913, "event": "restarted", "service": "enrollment", "instance": 1}
+{"ts": 1794195439.1207662, "event": "exited", "service": "gateway", "instance": 0, "code": 3}
+{"ts": 1794195440.1229692, "event": "restarted", "service": "gateway", "instance": 0}
+{"ts": 1794195440.3242671, "event": "exited", "service": "auth", "instance": 0, "code": 3}
+{"ts": 1794195441.325196, "event": "restarted", "service": "auth", "instance": 0}
+{"ts": 1794195441.3252466, "event": "exited", "service": "course", "instance": 0, "code": 3}
+{"ts": 1794195442.326419, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794195442.326489, "event": "exited", "service": "course", "instance": 1, "code": 3}
+{"ts": 1794195443.327685, "event": "restarted", "service": "course", "instance": 1}
+{"ts": 1794195443.3277428, "event": "exited", "service": "notification", "instance": 0, "code": 3}
+{"ts": 1794195444.3286874, "event": "restarted", "service": "notification", "instance": 0}
+{"ts": 1794195444.328736, "event": "exited", "service": "enrollment", "instance": 0, "code": 3}
+{"ts": 1794195445.329894, "event": "restarted", "service": "enrollment", "instance": 0}
+{"ts": 1794195445.3299546, "event": "exited", "service": "enrollment", "instance": 1, "code": 3}
+{"ts": 1794195446.3309839, "event": "restarted", "service": "enrollment", "instance": 1}
+{"ts": 1794195446.3310869, "event": "exited", "service": "gateway", "instance": 0, "code": 3}
+{"ts": 1794195447.3321288, "event": "restarted", "service": "gateway", "instance": 0}
+{"ts": 1794195447.5357928, "event": "stopped"}

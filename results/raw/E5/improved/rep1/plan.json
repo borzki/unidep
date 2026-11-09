@@ -1,0 +1,13 @@
+{
+  "title": "High load / traffic spike",
+  "hypothesis": "Throughput tracks offered load up to saturation; improved keeps error ratio < 1% at <= 50 rps; beyond saturation latency grows and errors appear.",
+  "workload": "Workload(rps=20, duration=80, read_ratio=0.7, client_retries=0, client_retry_delay=1.0, client_timeout=35.0, rps_steps=[(0, 20), (20, 50), (40, 80), (60, 120)])",
+  "fault_start": null,
+  "fault_end": null,
+  "events": 0,
+  "fault": "offered load steps 20 -> 50 -> 80 -> 120 req/s, 20 s each",
+  "success": "HTTP 2xx",
+  "mode": "improved",
+  "rep": 1,
+  "t_start_unix": 1794160424.872744
+}

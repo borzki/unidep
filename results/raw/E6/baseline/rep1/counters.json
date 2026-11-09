@@ -1,0 +1,8 @@
+{
+  "retries": {},
+  "circuit_opens": {},
+  "gateway_failovers": {},
+  "recovery_actions": {},
+  "security_events": {},
+  "rate_limited": 0.0
+}

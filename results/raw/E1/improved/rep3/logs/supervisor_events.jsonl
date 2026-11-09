@@ -1,0 +1,7 @@
+{"ts": 1794158335.9660509, "event": "started", "mode": "improved", "restart": true}
+{"ts": 1794158349.4258444, "event": "killed", "service": "course", "instance": 0, "pid": 3367}
+{"ts": 1794158349.4400384, "event": "killed", "service": "enrollment", "instance": 0, "pid": 3372}
+{"ts": 1794158349.6307127, "event": "exited", "service": "course", "instance": 0, "code": -9}
+{"ts": 1794158350.6317666, "event": "restarted", "service": "course", "instance": 0}
+{"ts": 1794158350.631832, "event": "exited", "service": "enrollment", "instance": 0, "code": -9}
+{"ts": 1794158351.632851, "event": "restarted", "service": "enrollment", "instance": 0}

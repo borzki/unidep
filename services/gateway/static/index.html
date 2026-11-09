@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UniDep · Enrollment console</title>
+<style>
+  :root {
+    --bg: #f5f6f8; --card: #ffffff; --ink: #1d2733; --muted: #6b7785; --line: #e3e7ec;
+    --accent: #2f6db5; --ok: #2e8b57; --warn: #c98a12; --bad: #c0392b; --chip: #eef2f7;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 14px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--ink); }
+  header { display: flex; align-items: center; gap: 12px; padding: 14px 24px; background: var(--card); border-bottom: 1px solid var(--line); }
+  header h1 { font-size: 17px; margin: 0; font-weight: 650; letter-spacing: .2px; }
+  header .sub { color: var(--muted); }
+  header .spacer { flex: 1; }
+  header a { color: var(--accent); text-decoration: none; margin-left: 14px; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; background: var(--chip); color: var(--ink); }
+  .badge.improved { background: #e3f1e8; color: var(--ok); }
+  .badge.baseline { background: #fbe9e7; color: var(--bad); }
+  main { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 18px; padding: 18px 24px 28px; max-width: 1400px; margin: 0 auto; }
+  @media (max-width: 1000px) { main { grid-template-columns: 1fr; } }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; }
+  section h2 { font-size: 14px; margin: 0 0 12px; text-transform: uppercase; letter-spacing: .6px; color: var(--muted); font-weight: 650; }
+  .col { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+  label { font-size: 12px; color: var(--muted); display: block; margin-bottom: 3px; }
+  input { font: inherit; padding: 7px 9px; border: 1px solid var(--line); border-radius: 6px; width: 100%; background: #fff; }
+  button { font: inherit; border: 1px solid var(--line); background: #fff; color: var(--ink); padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+  button:hover { border-color: #b9c2cc; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  button.danger { color: var(--bad); }
+  button:disabled { opacity: .45; cursor: default; }
+  .row { display: flex; gap: 10px; align-items: end; flex-wrap: wrap; }
+  .row > div { flex: 1; min-width: 120px; }
+  table { width: 100%; border-collapse: collapse; }
+  th, td { text-align: left; padding: 7px 6px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+  th { font-size: 12px; color: var(--muted); font-weight: 600; }
+  td.num { font-variant-numeric: tabular-nums; }
+  .bar { height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; width: 90px; display: inline-block; vertical-align: middle; margin-right: 6px; }
+  .bar > i { display: block; height: 100%; background: var(--accent); }
+  .status { font-weight: 600; font-size: 12px; }
+  .status.CONFIRMED { color: var(--ok); } .status.PENDING { color: var(--warn); } .status.FAILED, .status.CANCELLED { color: var(--bad); }
+  .muted { color: var(--muted); }
+  .hint { color: var(--muted); font-size: 12px; margin-top: 8px; }
+  .replicas { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; }
+  .rep { border: 1px solid var(--line); border-radius: 8px; padding: 10px; }
+  .rep .name { font-weight: 650; display: flex; align-items: center; gap: 8px; }
+  .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; background: #bbb; }
+  .dot.up { background: var(--ok); } .dot.notready { background: var(--warn); } .dot.down { background: var(--bad); }
+  .rep .state { font-size: 12px; color: var(--muted); margin: 4px 0 8px; min-height: 18px; }
+  .chip { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--chip); margin: 2px 4px 0 0; }
+  .chip.open { background: #fbe9e7; color: var(--bad); } .chip.half_open { background: #fdf3e1; color: var(--warn); } .chip.closed { background: #e3f1e8; color: var(--ok); }
+  .rep .actions { display: flex; flex-wrap: wrap; gap: 5px; }
+  .rep .actions button { padding: 3px 8px; font-size: 12px; }
+  .log { font: 12px/1.5 ui-monospace, SFMono-Regular, Consolas, monospace; max-height: 300px; overflow: auto; }
+  .log div { padding: 3px 0; border-bottom: 1px dashed var(--line); display: grid; grid-template-columns: 84px 40px minmax(0, 1fr) 64px 110px; gap: 8px; }
+  .code { font-weight: 700; } .code.s2 { color: var(--ok); } .code.s4 { color: var(--warn); } .code.s5, .code.s0 { color: var(--bad); }
+  .replay { color: var(--accent); font-weight: 600; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>UniDep</h1><span class="sub">dependable enrollment console</span>
+  <span id="mode" class="badge">mode: …</span>
+  <span class="spacer"></span>
+  <span id="who" class="muted"></span>
+  <a href="http://localhost:3000" target="_blank" rel="noopener">Grafana</a>
+  <a href="http://localhost:9090/alerts" target="_blank" rel="noopener">Alerts</a>
+  <a href="/health/ready" target="_blank" rel="noopener">Readiness</a>
+</header>
+
+<main>
+  <div class="col">
+    <section id="loginBox">
+      <h2>Sign in</h2>
+      <div class="row">
+        <div><label>Username</label><input id="user" value="student0001"></div>
+        <div><label>Password</label><input id="pass" type="password" value="student-pass"></div>
+        <button class="primary" id="loginBtn">Sign in</button>
+      </div>
+      <div class="hint">Test accounts: student0001 … student0500 / student-pass</div>
+    </section>
+
+    <section id="coursesBox" class="hidden">
+      <h2>Courses</h2>
+      <table><thead><tr><th>Code</th><th>Title</th><th>Seats</th><th></th></tr></thead><tbody id="courses"></tbody></table>
+      <div class="row" style="margin-top:12px">
+        <button id="replayBtn" disabled title="Send the last enrollment again with the SAME Idempotency-Key">Resend last enrollment (same key)</button>
+        <span id="lastKey" class="muted"></span>
+      </div>
+      <div class="hint">Each “Enroll” sends a new Idempotency-Key. Resending with the same key must return the same enrollment, not a duplicate.</div>
+    </section>
+
+    <section id="mineBox" class="hidden">
+      <h2>My enrollments</h2>
+      <table><thead><tr><th>Course</th><th>Status</th><th>Step</th><th>Notification</th><th></th></tr></thead><tbody id="mine"></tbody></table>
+    </section>
+  </div>
+
+  <div class="col">
+    <section>
+      <h2>Replicas &amp; fault injection</h2>
+      <div class="row" style="margin-bottom:10px">
+        <div><label>Chaos token (test environment only)</label><input id="chaosToken" value="dev-chaos-token"></div>
+      </div>
+      <div id="replicas" class="replicas"></div>
+      <div class="hint">Green = ready, amber = up but not ready, red = unreachable. Polled every second through the gateway.</div>
+    </section>
+
+    <section>
+      <h2>Request log</h2>
+      <div class="log" id="log"></div>
+      <div class="hint">“served by” shows which replica answered: watch it switch when a replica fails.</div>
+    </section>
+  </div>
+</main>
+
+<script>
+const $ = (s) => document.querySelector(s);
+let token = null, me = null, lastEnroll = null;
+
+function esc(s) { return String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])); }
+function uuid() { return (crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2)).replace(/-/g, ""); }
+
+function log(method, path, code, ms, servedBy, note, replay) {
+  const el = document.createElement("div");
+  const t = new Date().toLocaleTimeString();
+  const cls = "s" + String(code)[0];
+  el.innerHTML = `<span class="muted">${t}</span><span class="code ${cls}">${code || "ERR"}</span>` +
+    `<span>${esc(method)} ${esc(path)} ${replay ? '<span class="replay">replay</span> ' : ""}<span class="muted">${esc(note)}</span></span>` +
+    `<span>${Math.round(ms)} ms</span><span class="muted">${esc(servedBy)}</span>`;
+  $("#log").prepend(el);
+}
+
+async function api(method, path, body, headers = {}) {
+  const t0 = performance.now();
+  const h = { "content-type": "application/json", ...headers };
+  if (token) h.authorization = "Bearer " + token;
+  let res, data = {};
+  try {
+    res = await fetch(path, { method, headers: h, body: body ? JSON.stringify(body) : undefined });
+    try { data = await res.json(); } catch { data = {}; }
+  } catch (e) {
+    log(method, path, 0, performance.now() - t0, "", "network error");
+    throw e;
+  }
+  const note = data && !Array.isArray(data) ? (data.status || data.detail || "") : `${data.length} items`;
+  log(method, path, res.status, performance.now() - t0, res.headers.get("x-served-by") || "", note, res.headers.get("idempotent-replay"));
+  return { res, data };
+}
+
+async function login() {
+  const { res, data } = await api("POST", "/auth/login", { username: $("#user").value.trim(), password: $("#pass").value });
+  if (!res.ok) { alertBox(data.detail || "login failed"); return; }
+  token = data.access_token; me = $("#user").value.trim();
+  $("#who").textContent = `signed in as ${me}`;
+  $("#loginBox").classList.add("hidden");
+  $("#coursesBox").classList.remove("hidden");
+  $("#mineBox").classList.remove("hidden");
+  refresh();
+}
+function alertBox(msg) { log("UI", "", 0, 0, "", msg); }
+
+async function refresh() {
+  if (!token) return;
+  try {
+    const [c, e, n] = await Promise.all([api("GET", "/courses"), api("GET", "/enrollments"), api("GET", "/notifications")]);
+    renderCourses(c.res.ok ? c.data : []);
+    renderMine(e.res.ok ? e.data : [], n.res.ok ? n.data : [], c.res.ok ? c.data : []);
+  } catch {}
+}
+
+function renderCourses(list) {
+  $("#courses").innerHTML = list.map(c => {
+    const pct = Math.min(100, 100 * c.seats_taken / c.capacity);
+    return `<tr><td>${esc(c.code)}</td><td>${esc(c.title)}</td>` +
+      `<td class="num"><span class="bar"><i style="width:${pct}%"></i></span>${c.seats_taken} / ${c.capacity}</td>` +
+      `<td><button class="primary" data-enroll="${c.id}">Enroll</button></td></tr>`;
+  }).join("");
+}
+
+function renderMine(list, notes, courses) {
+  const code = Object.fromEntries(courses.map(c => [c.id, c.code]));
+  const noted = new Set(notes.map(n => n.enrollment_id));
+  $("#mine").innerHTML = list.length ? list.map(e =>
+    `<tr><td>${esc(code[e.course_id] || e.course_id)}</td><td class="status ${esc(e.status)}">${esc(e.status)}</td>` +
+    `<td class="muted">${esc(e.step)}</td><td>${noted.has(e.id) ? "delivered" : '<span class="muted">pending</span>'}</td>` +
+    `<td>${e.status === "CONFIRMED" ? `<button class="danger" data-cancel="${e.id}">Cancel</button>` : ""}</td></tr>`
+  ).join("") : `<tr><td colspan="5" class="muted">No enrollments yet.</td></tr>`;
+}
+
+async function enroll(courseId, key) {
+  lastEnroll = { courseId, key };
+  $("#replayBtn").disabled = false;
+  $("#lastKey").textContent = `key ${key.slice(0, 8)}… → course ${courseId}`;
+  try { await api("POST", "/enrollments", { course_id: courseId }, { "idempotency-key": key }); } catch {}
+  refresh();
+  setTimeout(refresh, 2500);  // outbox delivers notifications asynchronously
+}
+
+async function cancel(id) {
+  try { await api("POST", `/enrollments/${id}/cancel`); } catch {}
+  refresh();
+}
+
+// ---------------------------------------------------------------- replicas
+const ACTIONS = {
+  enrollment: [["Crash now", { crash_point: "now" }, "danger"], ["Crash mid-transaction", { crash_point: "after_reserve" }, "danger"], ["Heal", {}, ""]],
+  course: [["Crash now", { crash_point: "now" }, "danger"], ["Slow +3 s", { latency_ms: 3000, path_prefix: "/internal" }, ""], ["Fail 30%", { error_rate: 0.3, path_prefix: "/internal" }, ""], ["Heal", {}, ""]],
+  notification: [["Crash now", { crash_point: "now" }, "danger"], ["Fail 100%", { error_rate: 1.0, path_prefix: "/internal" }, ""], ["Heal", {}, ""]],
+  auth: [["Crash now", { crash_point: "now" }, "danger"]],
+};
+let lastStatusHtml = "";
+
+async function chaos(service, index, state, label) {
+  try {
+    const r = await fetch("/ui/chaos", { method: "POST", headers: { "content-type": "application/json", "x-chaos-token": $("#chaosToken").value },
+      body: JSON.stringify({ service, index, state }) });
+    const d = await r.json().catch(() => ({}));
+    log("CHAOS", `${service} #${index + 1}: ${label}`, r.status, 0, "", r.ok ? "applied" : (d.detail || "refused"));
+  } catch { log("CHAOS", `${service} #${index + 1}`, 0, 0, "", "network error"); }
+  pollStatus();
+}
+
+async function pollStatus() {
+  try {
+    const r = await fetch("/ui/status");
+    const s = await r.json();
+    const mode = s.mode || "?";
+    $("#mode").textContent = "mode: " + mode;
+    $("#mode").className = "badge " + mode;
+    const html = s.replicas.filter(x => x.service !== "gateway").map(x => {
+      const cls = !x.up ? "down" : (x.ready ? "up" : "notready");
+      const txt = !x.up ? "unreachable" : (x.ready ? "ready" : "not ready (dependency down)");
+      const chips = x.service === "enrollment" && x.up
+        ? ["course", "notification"].map(t => { const st = x.checks?.[`info_${t}_breaker`] || "?"; return `<span class="chip ${st}">${t}: ${st}</span>`; }).join("")
+        : "";
+      const acts = (ACTIONS[x.service] || []).map(([label, st, c]) =>
+        `<button class="${c}" data-chaos='${esc(JSON.stringify({ service: x.service, index: x.index, state: st, label }))}'>${esc(label)}</button>`).join("");
+      return `<div class="rep"><div class="name"><span class="dot ${cls}"></span>${esc(x.service)} #${x.index + 1}</div>` +
+        `<div class="state">${txt}<br>${chips}</div><div class="actions">${acts}</div></div>`;
+    }).join("");
+    if (html !== lastStatusHtml) { $("#replicas").innerHTML = html; lastStatusHtml = html; }
+  } catch {}
+}
+
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("button");
+  if (!b) return;
+  if (b.id === "loginBtn") login();
+  else if (b.id === "replayBtn" && lastEnroll) enroll(lastEnroll.courseId, lastEnroll.key);
+  else if (b.dataset.enroll) enroll(Number(b.dataset.enroll), uuid());
+  else if (b.dataset.cancel) cancel(b.dataset.cancel);
+  else if (b.dataset.chaos) { const c = JSON.parse(b.dataset.chaos); chaos(c.service, c.index, c.state, c.label); }
+});
+$("#pass").addEventListener("keydown", e => { if (e.key === "Enter") login(); });
+pollStatus();
+setInterval(pollStatus, 1000);
+</script>
+</body>
+</html>

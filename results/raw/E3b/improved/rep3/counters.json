@@ -1,0 +1,11 @@
+{
+  "retries": 67.3,
+  "circuit_opens": 0.0,
+  "gateway_failovers": {},
+  "recovery_actions": {
+    "outbox_sent": 233.0,
+    "pending_completed": 21.1
+  },
+  "security_events": {},
+  "rate_limited": 0.0
+}
