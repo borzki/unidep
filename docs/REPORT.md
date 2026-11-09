@@ -1,7 +1,7 @@
 # UniDep: Design and Evaluation of a Dependable University Enrollment System
 
 **Course:** Fault Tolerance and Dependable Computing, Final Project (Integrated Dependability Engineering Capstone)
-**Team:** Kalybekov Sultan (individual project). **Contributions:** see Section 13.
+**Team:** Kalybekov Sultan (individual project). **Repository:** https://github.com/borzki/unidep. **Contributions:** see Section 13.
 **Date:** November 2026
 
 ## Abstract
@@ -565,3 +565,4 @@ This is an individual project. Kalybekov Sultan is responsible for the whole pro
 - `pytest -q tests/test_acceptance.py` against the improved stack: 9 passed (AC1-AC9).
 - Raw data: `results/raw/<exp>/<profile>/rep<i>/` (requests.csv, summary.json, integrity.json, alerts.json, counters.json, plan.json, logs/). Consolidated: `results/summary.csv`, `results/summary.md`, `results/reliability.json`, `results/charts/`.
 - Reproduction: README, "Reproducing the experiments".
+- Code repository: https://github.com/borzki/unidep
